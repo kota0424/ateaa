@@ -1,0 +1,238 @@
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1.0rem;
+    color: #000;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+.ja {
+    margin-bottom: 20px;
+}
+.en {
+    color: #0B9CA8;
+}
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.logo {
+    line-height: 1px;
+    display: block;
+    width: 100px;
+}
+.logo:hover {
+    opacity: 0.7;
+}
+.sub-title {
+    color: #0B9CA8;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#header {
+    display: flex;
+    padding: 20px 0 20px 30px;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+#header .menu {
+    display: flex;    
+    font-size: 1.0rem;
+    text-align: center;
+}
+#header .menu li {
+    margin-right: 30px;
+}
+#header .menu li:hover {
+    opacity: 0.7;
+}
+#header .contact {
+    color: #fff;
+    background-color: #0B9CA8;
+    padding: 0 30px;
+    display: block;
+    align-items: center;
+    display: flex;
+    height: 100px;
+}
+#header .contact:hover {
+    opacity: 0.7;
+}
+#header .contact .calendar {
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+#mainvisual {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#mainvisual img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+.welcome {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#message {
+    text-align: left;
+    margin-bottom: 100px;
+}
+#message .sub-title {
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 30px;
+}
+#message .sub-txt　{
+    line-height: 1.5;
+}
+#point .p-title {
+    line-height: 70px;
+    font-size: 2.0rem;
+    color: #707070;
+    margin-bottom: 50px;
+    display: flex;
+}
+#point .p-title .number {
+    color: #fff;
+    margin-right: 20px;
+    width: 60px;
+    line-height: 70px;
+    position: relative;
+}
+#point .p-title .number img {
+    width: 100%;
+    position: absolute;
+    top: 5px;
+}
+#point .p-title .number p {
+    position: absolute;
+    top: 0px;
+    left: 14px;
+}
+#point li {
+    margin-bottom: 100px;
+}
+#symp {
+    margin-bottom: 100px;
+}
+#symp .list {
+    display: flex;
+    justify-content: space-between;
+}
+#symp .list .left,
+#symp .list .right {
+    width: 50%;
+}
+#symp .list .left li,
+#symp .list .right li {
+    margin-bottom: 30px;
+}
+#symp .list .left li .check,
+#symp .list .right li .check {
+    color: #0B9CA8;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+#question {
+    margin-bottom: 100px;
+}
+#question .q-title {
+    font-size: 2.0rem;
+    color: #707070;
+    margin-bottom: 40px;
+}
+#question .q-title span {
+    color: #0B9CA8;
+}
+#question .q-txt {
+    background-color: #F5F5F5;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+#detail {
+    width: 700px;
+    margin: 0 auto;
+    border: 5px solid #0B9CA8;
+    padding: 9px;
+    margin-bottom: 100px;
+}
+#detail .border {
+    border: 1px solid #0B9CA8;
+    padding: 40px;
+    position: relative;
+}
+#detail .d-title {
+    font-size: 2.0rem;
+    color: #707070;
+    margin-bottom: 50px;
+    text-align: center;    
+}
+#detail dt {
+    color: #0B9CA8;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+#detail dd {
+    margin-bottom: 40px;
+}
+#detail .kome {
+    font-size: 0.875rem;
+}
+#detail .btn {
+    font-size: 1.75rem;
+    padding: 20px 30px;
+    display: block;
+    color: #0B9CA8;
+    border: 1px solid #000;
+    margin-bottom: 40px;
+    position: absolute;
+    text-align: center;
+    bottom: 180px;
+    left: 200px;
+}
+.btn::before,
+.btn::after {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: #F5F5F5;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+.btn::before {
+    left: 0;
+    transform-origin: left top;
+}
+.btn::after {
+    right: 0;
+    transform-origin: right top;
+}
+.btn:hover::before,
+.btn:hover::after {
+    transform: scale(1, 1);
+}
+#detail .navi {
+    margin-top: 200px;
+}
